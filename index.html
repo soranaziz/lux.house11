@@ -1,0 +1,205 @@
+
+<!doctype html>
+<html lang="ku">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Soran Aziz — Graphic Designer</title>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    :root{
+      --bg: #1f1f1f;
+      --panel: #5e5e5e;
+      --muted: #9b9b9b;
+      --accent: #ff6b61; /* coral */
+      --max-width: 760px;
+      --container-padding: 24px;
+    }
+
+    /* Reset-ish */
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(#161616,#111) fixed;
+      color:#eee;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      padding:36px 12px;
+    }
+
+    .card {
+      width:100%;
+      max-width:420px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02));
+      border-radius:14px;
+      padding:40px var(--container-padding) 56px;
+      text-align:center;
+      box-shadow: 0 6px 30px rgba(0,0,0,0.6);
+      border: 1px solid rgba(255,255,255,0.03);
+    }
+
+    .role {
+      color: var(--accent);
+      font-weight:700;
+      font-size:22px;
+      letter-spacing:1px;
+    }
+
+    .subrole {
+      margin-top:8px;
+      color:var(--muted);
+      font-size:13px;
+      text-transform:uppercase;
+      letter-spacing:2px;
+    }
+    .div .div1 .div2 img{
+      width: 200px;
+      border-radius: 8rem;
+      margin-top: 3rem;
+    }
+
+    .desc {
+      margin-top:18px;
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.7;
+    }
+
+    /* avatar */
+    .avatar-wrap{
+      margin:30px auto 10px;
+      width:110px;
+      height:110px;
+      border-radius:999px;
+      background:linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.45));
+      display:grid;
+      place-items:center;
+      overflow:hidden;
+      border:4px solid rgba(255,255,255,0.02);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
+    }
+    .avatar{
+      width:100%;
+      height:100%;
+      background-image: url("avatar.jpg");
+      background-size:cover;
+      background-position:center;
+    }
+
+    .name {
+      margin-top:18px;
+      color:var(--accent);
+      font-weight:700;
+      font-size:20px;
+      letter-spacing:0.6px;
+    }
+
+    .welcome{
+      margin-top:10px;
+      color:var(--muted);
+      font-size:15px;
+    }
+
+    .about{
+      margin-top:12px;
+      color:var(--muted);
+      font-size:15px;
+      line-height:1.6;
+    }
+
+    .cta {
+      margin-top:26px;
+      color:var(--accent);
+      font-size:20px;
+      font-weight:700;
+    }
+
+    /* social icons row */
+    .socials{
+      margin-top:18px;
+      display:flex;
+      gap:18px;
+      justify-content:center;
+      align-items:center;
+    }
+    .socials a{
+      width:44px;
+      height:44px;
+      display:inline-grid;
+      place-items:center;
+      border-radius:10px;
+      background:transparent;
+      border:1px solid rgba(255,255,255,0.04);
+      text-decoration:none;
+      color:#ded4d4;
+      transition:transform .18s ease, background .18s ease;
+    }
+@media(max-width: 480px) {
+  .role { font-size: 20px; }
+  .name { font-size: 18px; }
+  .welcome, .about { font-size: 13px; }
+}
+a {
+  font-size: 40px;
+  margin: 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+
+
+
+
+    .socials a:hover{ transform:translateY(-4px); background:rgba(255,255,255,0.03) }
+
+    /* small layout tweaks for larger screens */
+    @media(min-width:540px){
+      body{padding:48px}
+      .card{padding:52px 40px 64px; max-width:600px}
+      .role{font-size:28px}
+      .name{font-size:26px}
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main" aria-labelledby="role-title">
+    <div id="role-title" class="role">Lux house</div>
+    <div class="subrole">{erbil}</div>
+
+   
+
+   <div class="div">
+    <div class="div1">
+      <div class="div2">
+        <img src="./5312450963048631655_99.jpg" alt="">
+      </div>
+    </div>
+   </div>
+
+    <div class="name">{هەقارات لوکس هاوس}</div>
+    <div class="welcome">ناونیشان ٣٢ پارک </div>
+<p class="about">بەرامبەر هوتیل رەمادە</p>
+    <div class="cta">Link</div>
+    <div class="socials" aria-label="social links">
+<a href="https://www.instagram.com/luxhouse.realestate?igsh=MWZidGZsOWs2YXozZw%3D%3D&utm_source=qr"><i class="fa-brands fa-square-instagram"></i></a>
+<a href="//www.tiktok.com/@luxhouse.realestate"><i class="fa-brands fa-tiktok"></i></a>
+<a href="http://wa.me/9647507267117"><i class="fa-brands fa-square-whatsapp"></i></a>
+    </div>
+  <script>
+    function openLink(e, url){
+      e.preventDefault();
+      // change '#' to your real url, or remove this function if you use normal anchors
+      if(url === '#'){ alert('Replace the link in the anchor with your real URL.'); return; }
+      window.open(url, '_blank', 'noopener');
+    }
+  </script>
+
+</body>
+</html>
